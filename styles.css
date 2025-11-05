@@ -1,0 +1,252 @@
+/* Add CSS styles for your web site here and use them in index.html. */
+
+nav {
+  background-color: #60a841;
+  padding: 12px 0;
+  position: fixed;             /* sticks to the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000;               /* keeps nav above content */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;     /* centers items */
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.nav li {
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+#LightDarkModeBtn {
+  text-decoration: none;
+  color: darkgreen;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.nav a:hover {
+  background-color: #27C2F5;  /* blue hover */
+  color: #fff;
+}
+
+#LightDarkModeBth button:hover {
+  background-color: #27C2F5;  /* blue hover */
+  color: #fff;
+}
+
+/* Prevent content from hiding under fixed nav */
+body {
+  margin: 0;
+  padding-top: 60px;  /* space for the nav bar */
+}
+
+body {
+    /* This background color is so it matches to the gif background seemlessly */
+    background-color: #F7F7F7;
+    font-family:"Oswald", sans-serif;
+}
+
+/* Main Top of the Page 
+!Will be adding navigation tools on top later! */
+#mainTitle {
+    color: 	#60a841;
+}
+#mainTitle:hover {
+color: #27C2F5;
+}
+#mainTitleDate {
+    color: #14b9c1;
+    padding: 5px;
+}
+#mainTitleDate:hover {
+    color: #8AA624;
+}
+#mainHeaderTitles {
+    text-align: center;
+}
+
+#mainHeaderImg {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+/* 
+#mainHeaderGif { /* ONLY WHEN DARK MODE IS TOGGLED
+  border: 5px solid #60a841;
+  border-radius: 50px; 
+}
+  */
+/* Front Navigation Images that will have links & Titles
+ (another form of navigation; easier on the eyes */
+#frontNavigationImgs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+ }
+
+#beachImg, #peopleAtBeachImg, #earthVolunteersImg, #mountainImg {
+  border: 2px solid #60a841;
+  border-radius: 5px;
+ }
+
+#infoForImgs {
+  color: #3396D3;
+  display: flex;
+  justify-content: center;
+  gap: 185px;
+  padding-top: 10px;
+ }
+
+#whatIsEarthDay {
+    color: #239BA7;
+}
+ #earthDayVideo {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+} 
+#infoAboutEarth {
+  padding: 20px;
+  color: #30aa67;
+ }
+
+/*
+about.html Css Styles here
+*/
+ 
+#mainAboutHeader {
+  color: #60a841;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20;
+ }
+h2 {
+  display: flex;
+  justify-content: center;
+  color:#60a841
+ }
+#historyContainer p {
+  text-align: center;
+}
+#significanceContainer p {
+  text-align: center;
+}
+#globalEventsContainer p {
+  text-align: center;
+}
+#FactsContainer ul, h4, li {
+  list-style-position: inside;
+  text-align: center;
+}
+#whyItMattersContainer p {
+  text-align: center;
+}
+ #aboutContent {
+  padding: 20px;
+ }
+ .aboutEarthImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border:#46eea8 5px solid;
+  border-radius: 20px;
+ }
+#aboutSourcesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #3396D3;
+}
+#aboutSourcesContainer ol {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+/* 
+explore.html Css Styles here 
+*/
+#exploreTitle {
+    color: #df4f4a;
+    text-align: center;
+    padding: 20px;
+}
+#exploreBody {
+  background-color: #f1eac0;
+}
+#mainImage {
+  display: flex;
+  justify-content: center;
+}
+.eventCarousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+.cardContainer {
+  display: flex;
+  overflow-x: auto;
+  width: 950px;
+  scroll-behavior: smooth;
+}
+.eventCard {
+  flex: 0 0 300px;         /* don’t shrink or grow, fixed 300px width */
+  margin: 0 10px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.eventCard:hover {
+  transform: translateY(-5px); /* lift slightly on hover */
+}
+.eventCard img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;  /* keeps image ratio but fills box */
+  border-radius: 12px 12px 0 0;
+}
+.arrowLeft, .arrowRight {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.arrowLeft:hover, .arrowRight:hover {
+  background-color: #1f5f3c;
+}
+
