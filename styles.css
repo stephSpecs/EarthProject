@@ -1,5 +1,20 @@
 /* Add CSS styles for your web site here and use them in index.html. */
 
+/* DARK MODE BODY CLASS*/
+.dark-mode {
+  background-color: #2C3930;
+}
+.dark-mode #themeButton {
+  background-color: #1F7D53;
+  color: #fafafa !important;
+  border-color: #f8f8f8 !important;
+
+}
+.dark-border {
+  border: 5px solid #60a841;
+  border-radius: 50px;
+}
+
 nav {
   background-color: #60a841;
   padding: 12px 0;
@@ -32,7 +47,7 @@ nav {
   padding: 6px 12px;
   border-radius: 8px;
 }
-#LightDarkModeBtn {
+#themeButton {
   text-decoration: none;
   color: darkgreen;
   font-weight: 600;
@@ -88,14 +103,10 @@ color: #27C2F5;
     padding: 10px;
     margin: 10px;
 }
-/* 
-#mainHeaderGif { /* ONLY WHEN DARK MODE IS TOGGLED
-  border: 5px solid #60a841;
-  border-radius: 50px; 
-}
-  */
+
 /* Front Navigation Images that will have links & Titles
  (another form of navigation; easier on the eyes */
+
 #frontNavigationImgs {
   display: flex;
   justify-content: center;
@@ -199,7 +210,7 @@ explore.html Css Styles here
 #exploreBody {
   background-color: #f1eac0;
 }
-#mainImage {
+#mainImageContainer {
   display: flex;
   justify-content: center;
 }
