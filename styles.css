@@ -62,7 +62,7 @@ nav {
   color: #fff;
 }
 
-#LightDarkModeBth button:hover {
+#themeButton:hover {
   background-color: #27C2F5;  /* blue hover */
   color: #fff;
 }
@@ -80,7 +80,8 @@ body {
 }
 
 /* Main Top of the Page 
-!Will be adding navigation tools on top later! */
+
+/*Will be adding navigation tools on top later! */
 #mainTitle {
     color: 	#60a841;
 }
