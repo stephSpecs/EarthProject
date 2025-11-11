@@ -78,6 +78,9 @@ body {
     background-color: #F7F7F7;
     font-family:"Oswald", sans-serif;
 }
+footer {
+  color:#1F7D53
+}
 
 /* Main Top of the Page 
 
@@ -262,3 +265,29 @@ explore.html Css Styles here
   background-color: #1f5f3c;
 }
 
+/*
+getInvolved.html CSS Styles go here
+*/
+.getInvolvedTitle {
+    color: #60a841;
+    text-align: center;
+    padding: 5px;
+}
+.userInput {
+display: flex;
+padding: 10px;
+}
+#signUpContainer p {
+  color: #3396D3
+}
+#signUpButton {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+#signUpButton:hover {
+  background-color: #1f5f3c;
+}
