@@ -95,7 +95,7 @@ const cardContainer = document.querySelector('.cardContainer');
 const arrowLeft = document.querySelector('.arrowLeft');
 const arrowRight = document.querySelector('.arrowRight');
 
-// Ensure elements exist before adding event listeners
+// ✅ Put EVERYTHING inside this check
 if (cardContainer && arrowLeft && arrowRight) {
   let scrollPosition = 0;
   const cardWidth = 320; // same width as each card + margin
