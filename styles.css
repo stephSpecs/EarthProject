@@ -1,5 +1,20 @@
 /* Add CSS styles for your web site here and use them in index.html. */
 
+/* DARK MODE BODY CLASS*/
+.dark-mode {
+  background-color: #2C3930;
+}
+.dark-mode #themeButton {
+  background-color: #1F7D53;
+  color: #fafafa !important;
+  border-color: #f8f8f8 !important;
+
+}
+.dark-border {
+  border: 5px solid #60a841;
+  border-radius: 50px;
+}
+
 nav {
   background-color: #60a841;
   padding: 12px 0;
@@ -32,7 +47,7 @@ nav {
   padding: 6px 12px;
   border-radius: 8px;
 }
-#LightDarkModeBtn {
+#themeButton {
   text-decoration: none;
   color: darkgreen;
   font-weight: 600;
@@ -47,7 +62,7 @@ nav {
   color: #fff;
 }
 
-#LightDarkModeBth button:hover {
+#themeButton:hover {
   background-color: #27C2F5;  /* blue hover */
   color: #fff;
 }
@@ -63,9 +78,13 @@ body {
     background-color: #F7F7F7;
     font-family:"Oswald", sans-serif;
 }
+footer {
+  color:#1F7D53
+}
 
 /* Main Top of the Page 
-!Will be adding navigation tools on top later! */
+
+/*Will be adding navigation tools on top later! */
 #mainTitle {
     color: 	#60a841;
 }
@@ -88,14 +107,10 @@ color: #27C2F5;
     padding: 10px;
     margin: 10px;
 }
-/* 
-#mainHeaderGif { /* ONLY WHEN DARK MODE IS TOGGLED
-  border: 5px solid #60a841;
-  border-radius: 50px; 
-}
-  */
+
 /* Front Navigation Images that will have links & Titles
  (another form of navigation; easier on the eyes */
+
 #frontNavigationImgs {
   display: flex;
   justify-content: center;
@@ -199,7 +214,7 @@ explore.html Css Styles here
 #exploreBody {
   background-color: #f1eac0;
 }
-#mainImage {
+#mainImageContainer {
   display: flex;
   justify-content: center;
 }
@@ -250,3 +265,67 @@ explore.html Css Styles here
   background-color: #1f5f3c;
 }
 
+/*
+getInvolved.html CSS Styles go here
+*/
+
+.getInvolvedTitle {
+    color: #60a841;
+    text-align: center;
+    padding: 5px;
+}
+.rsvp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.rsvp-para {
+  color: #3396D3;
+  width: 55%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.rsvp-participants {
+  width: 45%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.form-container {
+  display: flex;
+  padding: 10px;
+}
+#rsvp-button {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+#rsvp-button:hover {
+  background-color: #1f5f3c;
+}
+.error {
+  border-style:solid;
+  border-width: 2px;
+  /* border-color + background */
+  border-color: red;
+  background-color: #ffd6d6;
+}
+.dark-mode .rsvp-para p {
+  color: #f8f8f8 !important;
+}
+
+.dark-mode .rsvp-participants p {
+  color: #f8f8f8 !important;
+}
+
+.dark-mode #rsvp-form label {
+  color: #f8f8f8 !important;
+}
+
+.dark-mode h2 {
+  color: #f8f8f8 !important;
+}

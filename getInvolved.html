@@ -12,14 +12,65 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
-     <nav>
-            <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="explore.html">Explore</a></li>
-                <li><a href="getInvolved.html">Get Involved</a></li>
-                <li><button id="LightDarkModeBtn">Dark Mode</button></li>
-            </ul>
-        </nav>
+
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="getInvolved.html">Get Involved</a></li>
+            <li><button id="themeButton">Dark Mode</button></li>
+        </ul>
+    </nav>
+
+    
+<!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+<div id="rsvp">
+    <h1 class="getInvolvedTitle">Get Involved!</h1>
+    <h3 class="getInvolvedTitle">Join our community and make a difference.</h3>
+    <h2>RSVP</h2>
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+            <!-- info goes here -->
+             <p>
+                Join us in taking real action for our planet! 
+                Your time and energy can help restore natural habitats, reduce waste, and build a cleaner, greener future for everyone. 
+                Whether it’s cleaning up beaches, planting trees, or supporting community sustainability projects, every helping hand counts. 
+                RSVP today to volunteer and be part of the movement that keeps Earth thriving for generations to come! 🌱
+             </p>
+        </div>
+        <div class="rsvp-participants">
+            <p>♻️ Jenna from Ft. Lauderdale has RSVP'd.</p>
+            <p>♻️ Sophia from Miami Lakes has RSVP'd.</p>
+            <p>♻️ Elena from Coral Springs has RSVP'd.</p>
+        </div>
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+            <!-- form inputs go here -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </form>
+        <!-- Submit button -->
+        <button id="rsvp-button">Submit RSVP</button>
+    </div>      
+</div>
 </body>
 </html>
