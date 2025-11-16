@@ -1,5 +1,17 @@
 /* Add CSS styles for your web site here and use them in index.html. */
 
+/* Reduce motion style for body */
+body.reduce-motion .revealable {
+  transition: none !important;
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+#reduce-motion-button.active {
+  background-color: #1F7D53;
+  color: #fafafa !important;
+  border-color: #f8f8f8 !important;
+}
+
 /* DARK MODE BODY CLASS*/
 .dark-mode {
   background-color: #2C3930;
@@ -14,7 +26,7 @@
   border: 5px solid #60a841;
   border-radius: 50px;
 }
-
+/* Navigation Bar Styles */
 nav {
   background-color: #60a841;
   padding: 12px 0;
@@ -24,7 +36,6 @@ nav {
   z-index: 1000;               /* keeps nav above content */
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
 .nav {
   list-style: none;
   display: flex;
@@ -33,11 +44,9 @@ nav {
   padding: 0;
   gap: 40px;
 }
-
 .nav li {
   margin: 0;
 }
-
 .nav a {
   text-decoration: none;
   color: white;
@@ -47,7 +56,7 @@ nav {
   padding: 6px 12px;
   border-radius: 8px;
 }
-#themeButton {
+#themeButton, #reduce-motion-button {
   text-decoration: none;
   color: darkgreen;
   font-weight: 600;
@@ -56,7 +65,6 @@ nav {
   padding: 6px 12px;
   border-radius: 8px;
 }
-
 .nav a:hover {
   background-color: #27C2F5;  /* blue hover */
   color: #fff;
@@ -178,7 +186,7 @@ h2 {
 }
  #aboutContent {
   padding: 20px;
- }
+}
  .aboutEarthImg {
   display: flex;
   justify-content: center;
@@ -188,7 +196,7 @@ h2 {
   margin: 0 auto;
   border:#46eea8 5px solid;
   border-radius: 20px;
- }
+}
 #aboutSourcesContainer {
   display: flex;
   flex-direction: column;
@@ -328,4 +336,86 @@ getInvolved.html CSS Styles go here
 
 .dark-mode h2 {
   color: #f8f8f8 !important;
+}
+/*** Success Modal  ***
+  
+  Purpose:
+  - Add style rules to your website's pop-up modal, which appears
+    when a user successfully submits the RSVP form
+
+  When To Modify:
+  - [ ] Project 9 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.modal {
+  display: none;   /* modal should be hidden by default*/
+  position: fixed; /* modal cannot move around the screen */
+  z-index: 2;      /* modal appears above other elements */ 
+  
+  /* TODO: Make the modal fill the entire screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Add a semi-transparent background to shadow non-modal elements*/
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+
+  /* Flexbox settings for modal */
+  /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+    /* Change modal size and spacing here */
+    padding: 50px;
+    width: 55%;
+
+    /* Customize modal style here */
+    background-color: #F1F3E0;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: monospace;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow around the modal */
+
+    /* Optional: Use flexbox to customize .modal-item layout */
+    display: flex;
+
+}
+.close-modal button {
+  display: flex;
+  justify-content: flex-end;
+  background-color:#30aa67;
+
+}
+
+/*** Animations  ***
+  
+  Purpose:
+  - Add style rules to enable scroll animations for your website
+
+  When To Modify:
+  - [ ] Project 8 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.revealable {
+  --reveal-distance: 150px; /* CSS Variable */
+
+  scroll-margin-top: var(--reveal-distance);
+  opacity: 0;
+  transition: all 2s ease;
+  position: relative;
+  transform: translateY(var(--reveal-distance));
+}
+
+.active {
+  scroll-margin-top: 0;
+  transform: translateY(0);
+  opacity: 1;
 }

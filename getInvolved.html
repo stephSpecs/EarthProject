@@ -20,6 +20,7 @@
             <li><a href="explore.html">Explore</a></li>
             <li><a href="getInvolved.html">Get Involved</a></li>
             <li><button id="themeButton">Dark Mode</button></li>
+            <li><button id="reduce-motion-button">Reduce Motion Off</button></li>
         </ul>
     </nav>
 
@@ -36,7 +37,7 @@ When To Modify:
 - [ ] Project 6 (STRETCH FEATURE) 
 - [ ] Any time after
 --> 
-<div id="rsvp">
+<div id="rsvp" class="revealable">
     <h1 class="getInvolvedTitle">Get Involved!</h1>
     <h3 class="getInvolvedTitle">Join our community and make a difference.</h3>
     <h2>RSVP</h2>
@@ -72,5 +73,31 @@ When To Modify:
         <button id="rsvp-button">Submit RSVP</button>
     </div>      
 </div>
+
+<!-- success modal
+
+Purpose:
+- Modal that appears when a user successfully signs up for the event
+- Contains a personalized message and image
+
+When To Modify:
+- [ ] Project 9 (REQUIRED FEATURE)
+- [ ] Project 9 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+
+<div id="success-modal" class="modal">
+    <div class="modal-container">
+        <div id="modal-item">
+            <p id="modal-text"></p>
+            <button id="close-modal">✕</button>
+        </div>
+        <div id="modal-item">
+            <img id="modal-image" src="./getInvolvedImgs/getInvolvedearthWithVines.png" alt="Drawing of Earth with Vines" width="150" height="150">
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>
