@@ -75,6 +75,8 @@ nav {
   color: #fff;
 }
 
+/* index.html */
+
 /* Prevent content from hiding under fixed nav */
 body {
   margin: 0;
@@ -120,23 +122,34 @@ color: #27C2F5;
  (another form of navigation; easier on the eyes */
 
 #frontNavigationImgs {
-  display: flex;
-  justify-content: center;
   gap: 20px;
  }
+
+ .img-container {
+  text-align: center;
+ }
+
+ #img-hover {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+#beachImg:hover, #peopleAtBeachImg:hover, #earthVolunteersImg:hover, #mountainImg:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
 
 #beachImg, #peopleAtBeachImg, #earthVolunteersImg, #mountainImg {
   border: 2px solid #60a841;
   border-radius: 5px;
- }
+}
 
-#infoForImgs {
+#frontNavigationImgs h3 {
   color: #3396D3;
-  display: flex;
-  justify-content: center;
-  gap: 185px;
-  padding-top: 10px;
- }
+}
+
 
 #whatIsEarthDay {
     color: #239BA7;
