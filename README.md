@@ -14,7 +14,7 @@ HTML | CSS | JAVASCRIPT
 - Embedded Youtube video for kids
 - Card carousal (for events)
 - RSVP form with validation and board updates
-- Javascript animations with reduce motion option (button) | (coming soon)
+- Javascript animations with reduce motion option (button)
 
 
 ## Contributing
